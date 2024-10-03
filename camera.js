@@ -6,8 +6,9 @@ video.srcObject = stream;
 //----------------------------------------------- 
 function on_cam_error(err) 
 { 
+  alert("error."+err.message);
 } 
-alert("error."+err.message); 
+
 //----------------------------------------------- 
 var constraints = { audio: false, video: true }; 
 navigator.mediaDevices.getUserMedia(constraints) 
